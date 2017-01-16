@@ -52,4 +52,5 @@ dependencies {
     compile files('libs/umeng_social_shareboard.jar')
     compile files('libs/umeng_shareboard_widget.jar')
     compile files('libs/umeng_social_shareview.jar')
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.7.8'
 }
