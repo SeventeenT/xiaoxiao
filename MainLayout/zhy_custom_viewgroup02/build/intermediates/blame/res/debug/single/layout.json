@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\demoTest\\MainLayout\\zhy_custom_viewgroup02\\build\\intermediates\\res\\merged\\debug\\layout\\test.xml",
+        "source": "D:\\demoTest\\MainLayout\\zhy_custom_viewgroup02\\src\\main\\res\\layout\\test.xml"
+    },
+    {
+        "merged": "D:\\demoTest\\MainLayout\\zhy_custom_viewgroup02\\build\\intermediates\\res\\merged\\debug\\layout\\test2.xml",
+        "source": "D:\\demoTest\\MainLayout\\zhy_custom_viewgroup02\\src\\main\\res\\layout\\test2.xml"
+    },
+    {
+        "merged": "D:\\demoTest\\MainLayout\\zhy_custom_viewgroup02\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\demoTest\\MainLayout\\zhy_custom_viewgroup02\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

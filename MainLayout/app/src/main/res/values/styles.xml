@@ -1,0 +1,108 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <style name="grey_12sp">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_grey_10sp">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text_grey_12sp">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_grey_14sp">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_grey_16sp">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_grey_18sp">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="main_white_14sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="write_16sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="write_20sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="main_red_10sp">
+        <item name="android:textColor">@color/main_red</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="main_red_12sp">
+        <item name="android:textColor">@color/main_red</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="main_red_14sp">
+        <item name="android:textColor">@color/main_red</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="green_12sp">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="pop_grey_10sp">
+        <item name="android:textColor">@color/pop_grey</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionSheetStyleiOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+        <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+        <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+        <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+        <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+        <item name="cancelButtonTextColor">#1E82FF</item>
+        <item name="otherButtonTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">12sp</item>
+    </style>
+
+</resources>

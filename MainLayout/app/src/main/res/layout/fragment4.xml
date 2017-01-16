@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context="com.xiaoxiao.mainlayout.fragment.Fragment4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="透明指示层"
+            style="@style/text_grey_14sp"/>
+
+        <TextView
+            android:id="@+id/tv_btn_yinlian"
+            style="@style/main_white_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_text_blue_btn"
+            android:gravity="center"
+            android:text="银联支付" />
+
+        <TextView
+            android:id="@+id/tv_btn_share"
+            style="@style/main_white_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_text_blue_btn"
+            android:gravity="center"
+            android:text="友盟" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="background">#fafafa</color>
+    <color name="lightGrey">#CDCDCD</color>
+    <color name="grey">#999999</color>
+    <color name="pop_grey">#9f9f9f</color>
+    <color name="text_grey">#4A4A4B</color>
+    <color name="main_red">#ef4359</color>
+    <color name="transparency_grey">#e0999999</color>
+    <color name="yellow">#F5CD19</color>
+    <color name="green">#4ab69f</color>
+    <color name="blue">#1983EA</color>
+
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_indicator_color">#00E3E3</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+    <color name="stpi_default_line_done_color">#00E3E3</color>
+</resources>

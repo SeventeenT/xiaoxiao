@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:id="@+id/rly_main_activity">
+
+    <FrameLayout
+        android:id="@+id/frag_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lly_bottom"
+        android:layout_gravity="center"
+        android:persistentDrawingCache="animation" />
+
+    <LinearLayout
+        android:id="@+id/lly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/lly_bottom"
+            android:background="@color/lightGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lly_1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/img_1_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/main_home_no_checked_1" />
+
+                <TextView
+                    android:id="@+id/tv_1_text"
+                    style="@style/grey_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="首页" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/img_2_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/main_home_no_checked_2" />
+
+                <TextView
+                    android:id="@+id/tv_2_text"
+                    style="@style/grey_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="商品分类" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/img_3_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/main_home_no_checked_3" />
+
+                <TextView
+                    android:id="@+id/tv_3_text"
+                    style="@style/grey_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="控件效果" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/img_4_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/main_home_no_checked_4" />
+
+                <TextView
+                    android:id="@+id/tv_4_text"
+                    style="@style/grey_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="三方调用" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lly_5_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp">
+
+                <ImageView
+                    android:id="@+id/img_5_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/main_home_no_checked_5" />
+
+                <TextView
+                    android:id="@+id/tv_5_text"
+                    style="@style/grey_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="动画展示" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

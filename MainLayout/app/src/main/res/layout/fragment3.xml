@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/scroll_view"
+    android:scrollbars="none"
+    tools:context="com.xiaoxiao.mainlayout.fragment.Fragment3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_sanji_liandong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="省市区三级联动"
+                android:background="@drawable/shape_text_green_btn"/>
+
+            <TextView
+                android:id="@+id/tv_sanji_liandong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_yiji_liandong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一级，年龄"
+                android:background="@drawable/shape_text_green_btn"/>
+
+            <TextView
+                android:id="@+id/tv_yiji_liandong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="选择照片"
+            android:background="@drawable/shape_text_green_btn"/>
+
+        <TextView
+            android:id="@+id/btn_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="物流进度"
+            android:background="@drawable/shape_text_green_btn"/>
+
+        <TextView
+            android:id="@+id/btn_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="圆圈旋转"
+            android:background="@drawable/shape_text_green_btn"/>
+
+        <TextView
+            android:id="@+id/btn_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="转场动画"
+            android:background="@drawable/shape_text_green_btn"/>
+
+        <TextView
+            android:id="@+id/btn_stack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="图片展示"
+            android:background="@drawable/shape_text_green_btn"/>
+
+        <TextView
+            android:id="@+id/btn_view_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="自定义ViewGroup"
+            android:background="@drawable/shape_text_green_btn"/>
+
+    </LinearLayout>
+
+</ScrollView>
