@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/img_recycler_view_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/default_head"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_recycler_view_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称"
+        style="@style/text_grey_14sp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_recycler_view_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_grey_14sp"
+            android:text="￥100"/>
+
+        <TextView
+            android:id="@+id/tv_recycler_view_shop_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="@style/text_grey_12sp"
+            android:text="限量30份"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

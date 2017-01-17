@@ -102,6 +102,14 @@
             android:text="自定义ViewGroup"
             android:background="@drawable/shape_text_green_btn"/>
 
+        <TextView
+            android:id="@+id/btn_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="RecyclerView"
+            android:background="@drawable/shape_text_green_btn"/>
+
     </LinearLayout>
 
 </ScrollView>

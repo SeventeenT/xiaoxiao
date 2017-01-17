@@ -12,6 +12,7 @@ import com.xiaoxiao.mainlayout.R;
 import com.xiaoxiao.mainlayout.activity.ChoosePhotoActivity;
 import com.xiaoxiao.mainlayout.activity.MainActivity;
 import com.xiaoxiao.mainlayout.activity.ProgressActivity;
+import com.xiaoxiao.mainlayout.activity.RecyclerViewActivity;
 import com.xiaoxiao.mainlayout.activity.RotateCircleActivity;
 import com.xiaoxiao.mainlayout.activity.ShareTransiTion;
 import com.xiaoxiao.mainlayout.activity.StackLayoutActivity;
@@ -91,7 +92,7 @@ public class Fragment3 extends BaseFragment {
 
 
     @OnClick({R.id.btn_sanji_liandong, R.id.btn_yiji_liandong, R.id.btn_photo, R.id.btn_progress, R.id.btn_circle
-            , R.id.btn_animation,R.id.btn_stack,R.id.btn_view_group})
+            , R.id.btn_animation,R.id.btn_stack,R.id.btn_view_group,R.id.btn_recycler_view})
     public void setClick(View view) {
         switch (view.getId()) {
             case R.id.btn_sanji_liandong:
@@ -117,6 +118,9 @@ public class Fragment3 extends BaseFragment {
                 break;
             case R.id.btn_view_group:
                 startActivity(ViewGroupActivity.class,null);
+                break;
+            case R.id.btn_recycler_view:
+                startActivity(RecyclerViewActivity.class,null);
                 break;
         }
     }
