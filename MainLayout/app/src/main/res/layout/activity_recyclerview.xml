@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <!--<com.ajguan.library.EasyRefreshLayout
+        android:id="@+id/easy_refresh"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fadingEdge="none" />
+        android:layout_height="match_parent">-->
 
-</LinearLayout>
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none" />
+
+    </com.liaoinstan.springview.widget.SpringView>
+
+
+   <!-- </com.ajguan.library.EasyRefreshLayout>-->
+
+</RelativeLayout>
