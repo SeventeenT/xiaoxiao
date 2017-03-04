@@ -41,7 +41,7 @@
 
         <ImageView
             android:id="@+id/img_shop_type"
-            android:layout_width="wrap_content"
+            android:layout_width="40dp"
             android:layout_height="match_parent"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.xiaoxiao.mainlayout.R;
 import com.xiaoxiao.mainlayout.activity.ChoosePhotoActivity;
 import com.xiaoxiao.mainlayout.activity.MainActivity;
+import com.xiaoxiao.mainlayout.activity.PopWindowActivity;
 import com.xiaoxiao.mainlayout.activity.ProgressActivity;
 import com.xiaoxiao.mainlayout.activity.RecyclerViewActivity;
 import com.xiaoxiao.mainlayout.activity.RotateCircleActivity;
@@ -92,7 +93,7 @@ public class Fragment3 extends BaseFragment {
 
 
     @OnClick({R.id.btn_sanji_liandong, R.id.btn_yiji_liandong, R.id.btn_photo, R.id.btn_progress, R.id.btn_circle
-            , R.id.btn_animation,R.id.btn_stack,R.id.btn_view_group,R.id.btn_recycler_view})
+            , R.id.btn_animation,R.id.btn_stack,R.id.btn_view_group,R.id.btn_recycler_view,R.id.btn_pop_view})
     public void setClick(View view) {
         switch (view.getId()) {
             case R.id.btn_sanji_liandong:
@@ -121,6 +122,9 @@ public class Fragment3 extends BaseFragment {
                 break;
             case R.id.btn_recycler_view:
                 startActivity(RecyclerViewActivity.class,null);
+                break;
+            case R.id.btn_pop_view:
+                startActivity(PopWindowActivity.class,null);
                 break;
         }
     }

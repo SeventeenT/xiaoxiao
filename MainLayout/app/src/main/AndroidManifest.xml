@@ -28,16 +28,12 @@
             android:launchMode="singleTask"/>
         <!--<activity android:name=".activity.ShareTransiTion"
             android:launchMode="singleTask"/>-->
-        <activity android:name=".activity.StackLayoutActivity"
-            android:launchMode="singleTask"/>
-        <activity android:name=".activity.ViewGroupActivity"
-            android:launchMode="singleTask"/>
-        <activity android:name=".activity.UPPayActivity"
-            android:launchMode="singleTask"/>
-        <activity android:name=".activity.UmengShareActivity"
-            android:launchMode="singleTask"/>
-        <activity android:name=".activity.RecyclerViewActivity"
-            android:launchMode="singleTask"/>
+        <activity android:name=".activity.StackLayoutActivity"/>
+        <activity android:name=".activity.ViewGroupActivity"/>
+        <activity android:name=".activity.UPPayActivity"/>
+        <activity android:name=".activity.UmengShareActivity"/>
+        <activity android:name=".activity.RecyclerViewActivity"/>
+        <activity android:name=".activity.PopWindowActivity"/>
 
         <!--银联支付-->
         <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>

@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="black_trans">#64000000</color>
     <color name="white">#FFFFFF</color>
     <color name="background">#fafafa</color>
     <color name="lightGrey">#CDCDCD</color>
