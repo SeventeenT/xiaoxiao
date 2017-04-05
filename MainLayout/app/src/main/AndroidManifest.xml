@@ -34,6 +34,7 @@
         <activity android:name=".activity.UmengShareActivity"/>
         <activity android:name=".activity.RecyclerViewActivity"/>
         <activity android:name=".activity.PopWindowActivity"/>
+        <activity android:name=".activity.ShowLongPicActivity"/>
 
         <!--银联支付-->
         <uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>

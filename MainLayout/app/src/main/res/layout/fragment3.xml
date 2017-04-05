@@ -118,6 +118,14 @@
             android:text="popupwindow出现动画"
             android:background="@drawable/shape_text_green_btn"/>
 
+        <TextView
+            android:id="@+id/btn_pic_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="webview加载长图"
+            android:background="@drawable/shape_text_green_btn"/>
+
     </LinearLayout>
 
 </ScrollView>

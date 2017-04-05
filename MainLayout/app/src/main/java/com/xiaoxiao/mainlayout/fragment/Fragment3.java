@@ -16,6 +16,7 @@ import com.xiaoxiao.mainlayout.activity.ProgressActivity;
 import com.xiaoxiao.mainlayout.activity.RecyclerViewActivity;
 import com.xiaoxiao.mainlayout.activity.RotateCircleActivity;
 import com.xiaoxiao.mainlayout.activity.ShareTransiTion;
+import com.xiaoxiao.mainlayout.activity.ShowLongPicActivity;
 import com.xiaoxiao.mainlayout.activity.StackLayoutActivity;
 import com.xiaoxiao.mainlayout.activity.ViewGroupActivity;
 import com.xiaoxiao.mainlayout.base.BaseFragment;
@@ -93,7 +94,8 @@ public class Fragment3 extends BaseFragment {
 
 
     @OnClick({R.id.btn_sanji_liandong, R.id.btn_yiji_liandong, R.id.btn_photo, R.id.btn_progress, R.id.btn_circle
-            , R.id.btn_animation,R.id.btn_stack,R.id.btn_view_group,R.id.btn_recycler_view,R.id.btn_pop_view})
+            , R.id.btn_animation, R.id.btn_stack, R.id.btn_view_group, R.id.btn_recycler_view, R.id.btn_pop_view,
+            R.id.btn_pic_show})
     public void setClick(View view) {
         switch (view.getId()) {
             case R.id.btn_sanji_liandong:
@@ -112,19 +114,22 @@ public class Fragment3 extends BaseFragment {
                 startActivity(RotateCircleActivity.class, null);
                 break;
             case R.id.btn_animation:
-                startActivity(ShareTransiTion.class,null);
+                startActivity(ShareTransiTion.class, null);
                 break;
             case R.id.btn_stack:
-                startActivity(StackLayoutActivity.class,null);
+                startActivity(StackLayoutActivity.class, null);
                 break;
             case R.id.btn_view_group:
-                startActivity(ViewGroupActivity.class,null);
+                startActivity(ViewGroupActivity.class, null);
                 break;
             case R.id.btn_recycler_view:
-                startActivity(RecyclerViewActivity.class,null);
+                startActivity(RecyclerViewActivity.class, null);
                 break;
             case R.id.btn_pop_view:
-                startActivity(PopWindowActivity.class,null);
+                startActivity(PopWindowActivity.class, null);
+                break;
+            case R.id.btn_pic_show:
+                startActivity(ShowLongPicActivity.class, null);
                 break;
         }
     }

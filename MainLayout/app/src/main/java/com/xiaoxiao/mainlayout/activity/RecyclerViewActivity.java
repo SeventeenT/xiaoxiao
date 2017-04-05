@@ -3,8 +3,11 @@ package com.xiaoxiao.mainlayout.activity;
 import android.os.Handler;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.TextView;
 
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.liaoinstan.springview.container.MeituanFooter;
 import com.liaoinstan.springview.container.MeituanHeader;
 import com.liaoinstan.springview.widget.SpringView;
@@ -12,6 +15,7 @@ import com.xiaoxiao.mainlayout.R;
 import com.xiaoxiao.mainlayout.adapter.RecyclerViewAdapter;
 import com.xiaoxiao.mainlayout.base.BaseActivity;
 import com.xiaoxiao.mainlayout.entity.ShopRecyclerBean;
+import com.xiaoxiao.mainlayout.utils.CommonUtils;
 import com.xiaoxiao.mainlayout.utils.Toasts;
 
 import java.util.ArrayList;
@@ -56,6 +60,18 @@ public class RecyclerViewActivity extends BaseActivity {
         recyclerView.setAdapter(mAdapter);
 //        initRefresh();
         initSpringView();
+        recyclerView.addOnItemTouchListener(new OnItemClickListener() {
+            @Override
+            public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
+                CommonUtils.getAllAppNames(RecyclerViewActivity.this);
+                if (position%2 == 1) {
+                    CommonUtils.copyOpenJingDong("京东",RecyclerViewActivity.this);
+                } else {
+                    CommonUtils.copyOpenTaobao("淘宝",RecyclerViewActivity.this);
+                }
+
+            }
+        });
     }
 
     @Override
@@ -99,47 +115,6 @@ public class RecyclerViewActivity extends BaseActivity {
         springView.setHeader(new MeituanHeader(this,pullAnimSrcs,refreshAnimSrcs));
         springView.setFooter(new MeituanFooter(this,loadingAnimSrcs));
     }
-
-    /*private void initRefresh() {
-        easyRefreshLayout.addEasyEvent(new EasyRefreshLayout.EasyEvent() {
-            @Override
-            public void onLoadMore() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        final List<ShopRecyclerBean> list = new ArrayList<>();
-                        for (int j = 0; j < 5; j++) {
-                            list.add(new ShopRecyclerBean(R.drawable.default_head, "商品名称j " + j, "￥100j" + j, "限量j" + j + "份"));
-                        }
-
-                        //adapter.addData(list);
-
-                        easyRefreshLayout.loadMoreComplete(new EasyRefreshLayout.Event() {
-                            @Override
-                            public void complete() {
-                                mAdapter.getData().addAll(list);
-                                mAdapter.notifyDataSetChanged();
-                            }
-                        }, 500);
-                    }
-                }, 2000);
-            }
-
-            @Override
-            public void onRefreshing() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        mData.clear();
-                        mData = generateData(10);
-                        mAdapter.setNewData(mData);
-                        easyRefreshLayout.refreshComplete();
-                        Toasts.showShort(RecyclerViewActivity.this,"刷新成功");
-                    }
-                }, 2000);
-            }
-        });
-    }*/
 
     private List<ShopRecyclerBean> generateData(int number) {
         ArrayList<ShopRecyclerBean> data = new ArrayList<>();
