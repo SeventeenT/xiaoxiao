@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_send_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="系统正在派单..."
+        style="@style/text_grey_14sp"
+        android:paddingLeft="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/stpi_default_circle_color"/>
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black_blue_353b55"
+        android:layout_alignParentBottom="true"
+        android:text="开始接单"
+        android:gravity="center"
+        style="@style/write_16sp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

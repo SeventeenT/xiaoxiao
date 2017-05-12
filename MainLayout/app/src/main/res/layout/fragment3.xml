@@ -126,6 +126,14 @@
             android:text="webview加载长图"
             android:background="@drawable/shape_text_green_btn"/>
 
+        <TextView
+            android:id="@+id/btn_order_receiving_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="自动接单按钮动画"
+            android:background="@drawable/shape_text_green_btn"/>
+
     </LinearLayout>
 
 </ScrollView>
